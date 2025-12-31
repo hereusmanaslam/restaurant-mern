@@ -17,7 +17,7 @@ const Reservation = () => {
     const handleReservation = async (e) => {
         e.preventDefault()
         try {
-            const { data } = await axios.post("http://localhost:4000/api/v1/reservation/send",
+            const { data } = await axios.post("https://web-production-de894.up.railway.app/api/v1/reservation/send",
                 { firstName, lastName, email, date, time, phone },
                 {
                     headers: {
